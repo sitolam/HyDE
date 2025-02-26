@@ -33,8 +33,10 @@ if [ "$1" == "up" ] ; then
         command="
         fastfetch
         printf '[Official] %-10s\n[AUR]      %-10s\n[Flatpak]  %-10s\n' '$official' '$aur' '$flatpak'
+        snapper create -d 'pre systemupdate'
         ${aurhlpr} -Syu
         $fpk_exup
+        snapper create -d 'post systemupdate'
         read -n 1 -p 'Press any key to continue...'
         "
         kitty --title systemupdate sh -c "${command}"
