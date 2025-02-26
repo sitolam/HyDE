@@ -36,6 +36,10 @@ configure_spicetify() {
     spicetify backup apply
     spicetify config current_theme Sleek
     spicetify config color_scheme Wallbash
+
+    # custom plugins
+    spicetify config extensions shuffle+.js
+    
     spicetify restore backup
     spicetify backup apply
 }
