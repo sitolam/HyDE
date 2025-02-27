@@ -77,3 +77,8 @@ if ! pkg_installed flatpak; then
 else
     print_log -y "[FLATPAK]" -b " :: " "flatpak is already installed"
 fi
+
+# hyprland plugins
+"${scrDir}/.extra/hyprland_plugins.sh"
+# spotify spicetify
+$scrDir/../Configs/.local/share/bin/wallbashspotify.sh
