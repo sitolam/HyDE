@@ -32,19 +32,20 @@ This is a punnet square of the flags, But the output are unexpected
 |-------------------|-----------------------|-------------|
 
 
-N|Y|${HOME}|.zshrc .p10k.zsh|zsh oh-my-zsh-git zsh-theme-powerlevel10k pokemon-colorscripts-git
+Y|Y|${HOME}|.zshrc .p10k.zsh|zsh oh-my-zsh-git zsh-theme-powerlevel10k pokemon-colorscripts-git
 N|Y|${HOME}/.config/Code/User|settings.json|visual-studio-code-bin
 N|Y|${HOME}/.config/Code - OSS/User|settings.json|code
-N|Y|${HOME}/.config|code-flags.conf|visual-studio-code-bin
-N|Y|${HOME}/.config|code-flags.conf|code
-N|Y|${HOME}/.config|spotify-flags.conf|spotify
+Y|Y|${HOME}/.config|code-flags.conf|visual-studio-code-bin
+Y|Y|${HOME}/.config|code-flags.conf|code
+Y|Y|${HOME}/.config|spotify-flags.conf|spotify
 Y|Y|${HOME}/.config|dunst|dunst
-N|Y|${HOME}/.config|fish|fish
-N|Y|${HOME}/.config|lsd|lsd
+Y|Y|${HOME}/.config|fish|fish
+Y|Y|${HOME}/.config|lsd|lsd
 Y|Y|${HOME}/.config/hyde|wallbash|hyprland
 Y|Y|${HOME}/.local/share|hyde|hyprland
-N|Y|${HOME}/.config/hypr|nvidia.conf|hyprland nvidia-utils
-N|Y|${HOME}/.config/hypr|hyde.conf keybindings.conf monitors.conf userprefs.conf animations.conf hyprland.conf windowrules.conf animations themes|hyprland
+Y|Y|${HOME}/.config/hypr|nvidia.conf|hyprland nvidia-utils
+N|Y|${HOME}/.config/hypr|animations.conf|hyprland
+Y|Y|${HOME}/.config/hypr|hyde.conf keybindings.conf monitors.conf userprefs.conf hyprland.conf windowrules.conf animations themes|hyprland
 Y|Y|${HOME}/.local/lib|hyde|hyprland
 Y|Y|${HOME}/.config|kitty|kitty
 Y|Y|${HOME}/.config|Kvantum|kvantum
@@ -66,4 +67,14 @@ Y|Y|${HOME}/.config/menus|applications.menu|dolphin
 Y|Y|${HOME}/.local/share|dolphin|dolphin
 Y|Y|${HOME}/.local/share/kxmlgui5|dolphin|dolphin
 Y|Y|${HOME}/.local/share/kio/servicemenus|hydewallpaper.desktop|dolphin
-N|Y|${HOME}/.config|libinput-gestures.conf|libinput-gestures
+Y|Y|${HOME}/.config|libinput-gestures.conf|libinput-gestures
+Y|Y|${HOME}/.config|flameshot|flameshot
+Y|Y|/usr/share/applications|gparted.desktop|gparted
+Y|Y|/usr/share/applications|dev.vencord.Vesktop.desktop|flatpak
+Y|Y|${HOME}/.config|nvim|neovim
+N|Y|${HOME}/.local/share/Anki2|addons21|anki-bin
+N|Y|${HOME}/.config|antimicrox|antimicrox
+Y|Y|${HOME}/.ssh|config|openssh
+Y|Y|${HOME}/.config/kanata|config.kdb|kanata-bin
+Y|Y|${HOME}/.config/hyprpanel|config.json|ags-hyprpanel-git
+Y|Y|${HOME}/.config/fontconfig|fonts.conf|hyprland
