@@ -76,9 +76,14 @@ if pkg_installed zsh; then
 fi
 
 # set shell
-if [[ "$(grep "/${USER}:" /etc/passwd | awk -F '/' '{print $NF}')" != "${myShell}" ]]; then
-    print_log -sec "SHELL" -stat "change" "shell to ${myShell}..."
-    chsh -s "$(which "${myShell}")"
+current_shell=$(grep "/${USER}:" /etc/passwd | awk -F '/' '{print $NF}')
+
+if [[ "${current_shell}" != "${myShell}" ]]; then
+    while [[ "${current_shell}" != "${myShell}" ]]; do
+        print_log -sec "SHELL" -stat "change" "shell to ${myShell}..."
+        chsh -s "$(which "${myShell}")"
+        current_shell=$(grep "/${USER}:" /etc/passwd | awk -F '/' '{print $NF}')
+    done
 else
     print_log -sec "SHELL" -stat "exist" "${myShell} is already set as shell..."
 fi
