@@ -1,5 +1,5 @@
 # --------------------------------------------------- // System
-# downgrade                                            # downgrade packages
+downgrade                                              # downgrade packages
 # trash-cli-git                                        # cli to manage trash files
 # libinput-gestures                                    # actions touchpad gestures using libinput
 # gestures                                             # gui for libinput-gestures
@@ -8,6 +8,36 @@ python-requests|wttrbar                                # script dependency
 ddcui                                                  # GUI to control brightness for external monitors
 # hyprgui-bin                                          # GUI for hyprland configuration // might mess your userprefs but convenient // Just disappeared
 # swappy                                               # screenshot editor, DEPRECATED in favor for satty
+flameshot                                              # screenshot maker
+tesseract                                              # ocr maker
+tesseract-data-eng                                     # ocr language english
+gparted                                                # partition manager
+ttf-ms-win11-auto                                      # windows 11 fonts
+wine                                                   # program to run windows programs
+virt-manager                                           # virtual machine manager
+
+# --------------------------------------------------- // Tools
+antimicrox                                             # controller configurator
+kanata-bin                                             # keyboard configurator
+ncdu                                                   # storage usage analyzer
+wdisplays                                              # wayland display manager
+
+# --------------------------------------------------- // Dependencies
+mpv                                                    # audio player for anki
+ntfs-3g                                                # support for ntfs
+rust-analyzer                                          # analyzer for rust
+qemu-base                                              # qemu virtualization for virt-manager
+dnsmasq                                                # use sudo virsh net-start default
+exfatprogs                                             # gparted exfat compatibility
+
+# Emoji selector and wtype also for glyph selector
+wtype
+noto-fonts-emoji
+# Rofi Calculator
+libqalculate
+# Hyprland plugins
+cpio                                                   # dependency for hyprpm
+hyprwayland-scanner                                    # dependency for hyprpm
 
 # --------------------------------------------------- // Shell
 # oh-my-zsh-git|zsh                                      # Optional plugin manager for zsh // already installed locally
@@ -28,9 +58,28 @@ mangohud                                               # system performance over
 cava                                                   # audio visualizer
 spotify                                                # proprietary music streaming service
 spicetify-cli                                          # cli to customize spotify client
+qpwgraph                                               # PipeWire Graph Qt GUI Interface
+easyeffects                                            # Audio Effects for Pipewire applications
+noisetorch                                             # Real-time microphone noise suppression on Linux
 
 # --------------------------------------------------- // Apps
-# neovim                                               # vim based text editor
+neovim                                                 # vim based text editor
+anki                                                   # learning app
+zotero-bin                                             # zotero
+flowtime                                               # motivates you without losing concentration
+handbrake                                              # video encoding app
+bottles                                                # windows program runner
+figma-linux-bin                                        # application designing program
+
+# --------------------------------------------------- // Obs
+obs-studio                                             # Free, open source software for live streaming and recording
+obs-backgroundremoval                                  # Background removal plugin for OBS studio
+obs-plugin-input-overlay-bin                           # obs-studio plugin to show keyboard, gamepad and mouse input on stream.
+
+# --------------------------------------------------- // Communication
+kdeconnect                                             # phone connecting service
+signal-desktop                                         # signal for desktop
+element-desktop                                        # element for desktop
 
 # --------------------------------------------------- // Shell
 # oh-my-zsh-git|zsh                                      # Optional plugin manager for zsh
